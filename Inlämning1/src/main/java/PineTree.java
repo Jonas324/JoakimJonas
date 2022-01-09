@@ -1,3 +1,2 @@
-public static void PinneTree(String[]args){
-
-        }
+public class PineTree {
+}

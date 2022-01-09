@@ -13,15 +13,13 @@ public class Squirrel {
 
     }
 
-    public int getWeightAge(){ return weight + age;}
+
     public void setWeight(int i){weight = i; }
 
     public int getNumOfConesInNest(){ return numOfConesInNest;}
     public void setNumOfConesInNest(int i){numOfConesInNest = i; }
-
-    public int getAge(){ return age;}
     public void setAge(int i){age = i; }
-
+    public int getWeightAge(){ return weight + age;}
 
 
 }
