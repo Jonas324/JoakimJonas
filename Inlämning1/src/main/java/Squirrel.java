@@ -5,21 +5,28 @@ public class Squirrel {
     private int age;
 
     public Squirrel(int weight, int numOfConesInNest, int  age){
+        super();
 
-        this.weight = weight;
-        this.numOfConesInNest = numOfConesInNest;
+        setweight(weight);
+        setnumOfConesInNest(numOfConesInNest);
+        setage(age);
+    }
+
+    private void setage(int age) {
         this.age = age;
+    }
 
+    private void setnumOfConesInNest(int numOfConesInNest) {
+        this.numOfConesInNest = numOfConesInNest;
+    }
 
+    private void setweight(int weight) {
+        this.weight = weight;
     }
 
 
-    public void setWeight(int i){weight = i; }
-
-    public int getNumOfConesInNest(){ return numOfConesInNest;}
-    public void setNumOfConesInNest(int i){numOfConesInNest = i; }
-    public void setAge(int i){age = i; }
-    public int getWeightAge(){ return weight + age;}
-
-
+    public String getWeightAge(){
+        String squirrel = "Vikt: " + weight + "| Antal kottar: " + numOfConesInNest + " | Ålder: " + age + "\n";
+        return squirrel;
+    }
 }
