@@ -1,7 +1,6 @@
-import java.util.Random;
+import java.util.ArrayList;
 
 public class Owl {
-    public boolean fed;
     public boolean hungry;
     public static int wingSpan;
     public static int owlAge;
@@ -27,15 +26,15 @@ public class Owl {
         this.wingSpan = wingSpan;
     }
 
-    public boolean getFed() {
+    public String eat(ArrayList<Squirrel> squirrels) {
 
         int i = (int)(Math.random()*100) + 1 + wingSpan + owlAge;
 
-        if (i >= 50){
-            return true;
+        if (i >= 50 && squirrels.size() > 0){
+            return "Uggglan äter";
         }
         else {
-            return false;
+            return "Ugglan äter inte";
         }
     }
 }

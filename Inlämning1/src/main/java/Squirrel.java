@@ -29,4 +29,13 @@ public class Squirrel {
         String squirrel = "Vikt: " + weight + "| Antal kottar: " + numOfConesInNest + " | Ålder: " + age + "\n";
         return squirrel;
     }
+
+    public String eat() {
+
+        if (numOfConesInNest > 0 && weight >= 10) {
+            return "Ekkorren äter en kotte.";
+        } else {
+            return "Ekkorren äter inte.";
+        }
+    }
 }
